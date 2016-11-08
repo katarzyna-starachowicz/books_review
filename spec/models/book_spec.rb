@@ -12,4 +12,9 @@ RSpec.describe Book, type: :model do
     it { is_expected.to have_db_column :published_at }
     it { is_expected.to have_db_column :cover }
   end
+
+  describe 'associations' do
+    it { is_expected.to have_many :authors_books }
+    it { is_expected.to have_many :authors }
+  end
 end

@@ -12,4 +12,9 @@ RSpec.describe Author, type: :model do
     it { is_expected.to have_db_column :avatar }
     it { is_expected.to have_db_column :biography }
   end
+
+  describe 'associations' do
+    it { is_expected.to have_many :authors_books }
+    it { is_expected.to have_many :books }
+  end
 end
