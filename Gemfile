@@ -14,6 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'rubocop', '~> 0.45.0'
 gem 'haml-rails', '~> 0.9'
+gem 'decent_exposure', '3.0.0'
 
 group :development, :test do
   gem 'byebug'
