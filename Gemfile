@@ -12,6 +12,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'rubocop', '~> 0.45.0'
+
 group :development, :test do
   gem 'byebug'
 end
