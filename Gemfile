@@ -24,10 +24,13 @@ group :development, :test do
   gem 'faker', '~> 1.6', '>= 1.6.6'
 end
 
+group :test do
+  gem 'shoulda-matchers', '~> 3.1'
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
   gem 'spring'
 end
-
