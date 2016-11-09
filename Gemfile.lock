@@ -62,6 +62,11 @@ GEM
     decent_exposure (3.0.0)
       activesupport (>= 4.0)
     diff-lcs (1.2.5)
+    draper (2.1.0)
+      actionpack (>= 3.0)
+      activemodel (>= 3.0)
+      activesupport (>= 3.0)
+      request_store (~> 1.0)
     erubis (2.7.0)
     execjs (2.7.0)
     factory_girl (4.7.0)
@@ -141,6 +146,7 @@ GEM
     rainbow (2.1.0)
     rake (11.3.0)
     rdoc (4.3.0)
+    request_store (1.3.1)
     rspec-core (3.5.4)
       rspec-support (~> 3.5.0)
     rspec-expectations (3.5.0)
@@ -218,6 +224,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.1.0)
   decent_exposure (= 3.0.0)
+  draper (~> 2.1)
   factory_girl_rails
   faker (~> 1.6, >= 1.6.6)
   haml-rails (~> 0.9)

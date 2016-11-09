@@ -2,5 +2,5 @@
   - books.each do |book|
     %img{ src: book.cover }
     %ul
-      %li= book.title
-      %li= book.authors
+      %li= book.decorate.title_with_date
+      %li= book.decorate.formatted_authors

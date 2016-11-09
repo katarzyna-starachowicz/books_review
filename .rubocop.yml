@@ -61,3 +61,7 @@ Style/Alias:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+RSpec/NestedGroups:
+  MaxNesting: 4
+
