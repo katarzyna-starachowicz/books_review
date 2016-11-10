@@ -1,6 +1,5 @@
 - books.each do |book|
   %img{ src: book.cover }
   %ul
-    %li
-      = link_to book.decorate.title_with_date, book
+    %li= link_to book.decorate.title_with_date, book_path(book)
     %li= book.decorate.formatted_authors

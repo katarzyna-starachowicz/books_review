@@ -8,11 +8,11 @@ RSpec.describe AuthorsController, type: :controller do
     end
   end
 
-  describe "GET #show" do
+  describe "GET #books" do
     let(:author) { create(:author) }
 
     it "returns http success" do
-      get :show, id: author.id
+      get :books, id: author.id
       expect(response).to have_http_status(:success)
     end
   end

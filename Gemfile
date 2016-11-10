@@ -16,6 +16,7 @@ gem 'rubocop', '~> 0.45.0'
 gem 'haml-rails', '~> 0.9'
 gem 'decent_exposure', '3.0.0'
 gem 'draper', '~> 2.1'
+gem 'will_paginate', '~> 3.1', '>= 3.1.5'
 
 group :development, :test do
   gem 'byebug'

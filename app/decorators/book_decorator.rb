@@ -1,5 +1,5 @@
 class BookDecorator < Draper::Decorator
-  delegate :title, :published_at
+  delegate_all
 
   def title_with_date
     "#{title} (#{published_at.strftime('%Y')})"
@@ -9,5 +9,9 @@ class BookDecorator < Draper::Decorator
     object.authors.map do |author|
       "#{author.first_name} #{author.last_name}"
     end.join(" | ")
+  end
+
+  def self.collection_decorator_class
+    PaginatingDecorator
   end
 end
