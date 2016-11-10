@@ -7,6 +7,8 @@ require 'rspec/rails'
 require 'capybara/rspec'
 require 'shoulda/matchers'
 
+Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+
 ActiveRecord::Migration.maintain_test_schema!
 
 Shoulda::Matchers.configure do |config|
@@ -17,6 +19,8 @@ Shoulda::Matchers.configure do |config|
 end
 
 RSpec.configure do |config|
+  config.include Devise::TestHelpers, type: :controller
+  config.include Features::SessionHelpers, type: :feature
   config.include FactoryGirl::Syntax::Methods
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
