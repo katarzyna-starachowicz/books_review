@@ -1,6 +1,6 @@
 %h1 Authors
-  - authors.each do |author|
-    %img{ src: author.avatar }
-    %ul
-      %li= author.decorate.name
-      %li= author.decorate.formatted_books_titles
+- authors.each do |author|
+  %img{ src: author.avatar }
+  %ul
+    %li= link_to author.decorate.name, books_author_path(author)
+    %li= author.decorate.formatted_books_titles

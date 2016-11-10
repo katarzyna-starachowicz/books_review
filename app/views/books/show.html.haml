@@ -1,4 +1,6 @@
-%h1 book.decorate.title_with_date
-  %img{ src: book.cover }
-  %p= book.description
-  %p= book.decorate.formatted_authors
+%h1= book.decorate.title_with_date
+%ul
+- book.authors.each do |author|
+  %li= link_to author.decorate.name, books_author_path(author)
+%img{ src: book.cover }
+%p= book.description
